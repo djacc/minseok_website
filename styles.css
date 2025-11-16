@@ -1,0 +1,63 @@
+
+
+@font-face {
+  font-family: 'msCustom';
+  src: url('msCustom.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+}
+
+img::selection {
+  background: none;
+}
+
+html, 
+body {
+  font: 14px 'msCustom', arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Text scaling will be handled by JavaScript, not CSS media queries */
+
+main {
+  position: relative;
+  float: left;
+}
+
+figure {
+  position: relative;
+  float: left;
+  clear: none;
+  margin: 7px 0px 0px 7px;
+}
+
+figcaption {
+  position: relative;
+  float: left;
+  clear: both;
+}
+
+img {
+  position: relative;
+  float: left;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 1px;
+}
+
+
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+/* Media query removed - text scaling now handled by JavaScript */
