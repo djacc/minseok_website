@@ -24,11 +24,12 @@ body {
 /* Text scaling will be handled by JavaScript, not CSS media queries */
 
 header {
-  position: relative;
-  float: left;
-  clear: both;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  margin-bottom: 0px;
+  background-color: transparent;
+  z-index: 1000;
 }
 
 .header-content {
