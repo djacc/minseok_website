@@ -58,8 +58,8 @@ window.galleryData = [
     subfolder: "3_werkschau_plakat",
     images: [
       {
-        path: "web_images/3_werkschau_plakat/01_südkreuz.jpg",
-        title: "südkreuz"
+        path: "web_images/3_werkschau_plakat/01_suedkreuz.jpg",
+        title: "suedkreuz"
       },
       {
         path: "web_images/3_werkschau_plakat/02_first_draft.jpg",
@@ -108,20 +108,20 @@ window.galleryData = [
         title: "flyleaf"
       },
       {
-        path: "web_images/5_asuzüge/04_pages_18:19.jpg",
-        title: "pages_18:19"
+        path: "web_images/5_asuzüge/04_pages_18-19.jpg",
+        title: "pages_18-19"
       },
       {
-        path: "web_images/5_asuzüge/05_pages_20:21.jpg",
-        title: "pages_20:21"
+        path: "web_images/5_asuzüge/05_pages_20-21.jpg",
+        title: "pages_20-21"
       },
       {
-        path: "web_images/5_asuzüge/06_pages_38:39.jpg",
-        title: "pages_38:39"
+        path: "web_images/5_asuzüge/06_pages_38-39.jpg",
+        title: "pages_38-39"
       },
       {
-        path: "web_images/5_asuzüge/07_pages_38:39.jpg",
-        title: "pages_38:39"
+        path: "web_images/5_asuzüge/07_pages_38-39.jpg",
+        title: "pages_38-39"
       }
     ]
   }

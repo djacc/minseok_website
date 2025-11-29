@@ -291,7 +291,15 @@ function createImage(imageData, isFirstImage) {
   figure.style.maxWidth = `${width}%`;
   
   const img = document.createElement('img');
-  img.src = imageData.path;
+  // URL-encode the path to handle special characters (colons in filenames, etc.)
+  // We need to encode the path but preserve the directory structure
+  // Split path and encode each component separately to preserve slashes
+  const pathParts = imageData.path.split('/');
+  const encodedPath = pathParts.map(part => {
+    // Encode each path component to handle special chars like colons in filenames
+    return encodeURIComponent(part).replace(/%2F/g, '/');
+  }).join('/');
+  img.src = encodedPath;
   img.alt = imageData.title;
   
   // Add error handling for failed image loads
