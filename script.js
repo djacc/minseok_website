@@ -213,14 +213,33 @@ function setupDesktopHoverEvents() {
       figure.removeEventListener('mouseenter', figure.showCaption);
       figure.removeEventListener('mouseleave', figure.hideCaption);
       
+      // Check if this is a 00_.png image
+      const isZeroZero = figure.getAttribute('data-zero-zero') === 'true';
+      
       // Create hover functions
       figure.showCaption = function() {
         caption.style.visibility = 'visible';
+        // For 00_.png images, raise z-index so caption appears above other images
+        if (isZeroZero) {
+          figure.style.zIndex = '100';
+          caption.style.zIndex = '101';
+          caption.style.position = 'relative';
+        }
       };
       
       figure.hideCaption = function() {
         caption.style.visibility = 'hidden';
+        // Reset z-index when not hovering (but keep space reserved via margin-bottom)
+        if (isZeroZero) {
+          figure.style.zIndex = '';
+          caption.style.zIndex = '';
+        }
       };
+      
+      // For 00_.png images, start with caption hidden (space is still reserved via CSS margin-bottom)
+      if (isZeroZero) {
+        caption.style.visibility = 'hidden';
+      }
       
       // Add hover event listeners
       figure.addEventListener('mouseenter', figure.showCaption);
@@ -308,7 +327,9 @@ function createImage(imageData, isFirstImage) {
     // 00_.png files use fixed 400x400px size
     figure.style.width = '400px';
     figure.style.height = '400px';
+    figure.style.marginBottom = '30px'; // Reserve space below for caption
     figure.setAttribute('data-base-width', 400); // Store for reference
+    figure.setAttribute('data-zero-zero', 'true'); // Mark as 00_ image for z-index handling
   } else {
     // Random width between 20% and 40% (20% smaller than original 25-50%)
     const baseWidth = Math.floor(Math.random() * 20 + 10);
