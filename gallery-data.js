@@ -1,41 +1,49 @@
 // Auto-generated gallery data
 window.galleryData = [
   {
-    subfolder: "asuzuege",
+    subfolder: "auszuege",
     images: [
       {
-        path: "web_images/asuzuege/01_cover.png",
+        path: "web_images/auszuege/00_auszuege_aus.png",
+        title: "auszuege_aus"
+      },
+      {
+        path: "web_images/auszuege/01_cover.png",
         title: "cover"
       },
       {
-        path: "web_images/asuzuege/02_table_of_contents.png",
+        path: "web_images/auszuege/02_table_of_contents.png",
         title: "table_of_contents"
       },
       {
-        path: "web_images/asuzuege/03_flyleaf.png",
+        path: "web_images/auszuege/03_flyleaf.png",
         title: "flyleaf"
       },
       {
-        path: "web_images/asuzuege/04_pages_18-19.png",
-        title: "pages_18-19"
+        path: "web_images/auszuege/04_pages_18_19.png",
+        title: "pages_18_19"
       },
       {
-        path: "web_images/asuzuege/05_pages_20-21.png",
-        title: "pages_20-21"
+        path: "web_images/auszuege/05_pages_20_21.png",
+        title: "pages_20_21"
       },
       {
-        path: "web_images/asuzuege/06_pages_38-39.png",
-        title: "pages_38-39"
+        path: "web_images/auszuege/06_pages_38_39.png",
+        title: "pages_38_39"
       },
       {
-        path: "web_images/asuzuege/07_pages_38-39.png",
-        title: "pages_38-39"
+        path: "web_images/auszuege/07_pages_38_39.png",
+        title: "pages_38_39"
       }
     ]
   },
   {
     subfolder: "loehr_salonediasschau",
     images: [
+      {
+        path: "web_images/loehr_salonediasschau/00_himmel_ueber_aschau.png",
+        title: "himmel_ueber_aschau"
+      },
       {
         path: "web_images/loehr_salonediasschau/01_jazz_seat_detail.jpeg",
         title: "jazz_seat_detail"
@@ -58,6 +66,10 @@ window.galleryData = [
     subfolder: "saveroom",
     images: [
       {
+        path: "web_images/saveroom/00_save_room_theme.png",
+        title: "save_room_theme"
+      },
+      {
         path: "web_images/saveroom/01_full_cover.png",
         title: "full_cover"
       },
@@ -74,6 +86,10 @@ window.galleryData = [
   {
     subfolder: "superellipse",
     images: [
+      {
+        path: "web_images/superellipse/00_superellipse.png",
+        title: "superellipse"
+      },
       {
         path: "web_images/superellipse/01_process.png",
         title: "process"
@@ -107,6 +123,10 @@ window.galleryData = [
   {
     subfolder: "werkschau_plakat",
     images: [
+      {
+        path: "web_images/werkschau_plakat/00_werkschau_plakat.png",
+        title: "werkschau_plakat"
+      },
       {
         path: "web_images/werkschau_plakat/01_first_draft.png",
         title: "first_draft"

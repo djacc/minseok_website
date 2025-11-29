@@ -8,14 +8,28 @@ function shuffleArray(array) {
   return shuffled;
 }
 
-// Process gallery data: randomize images within each subfolder, then flatten
+// Process gallery data: keep 00_.png first, then randomize other images within each subfolder, then flatten
 let flattenedGalleryData = [];
 if (window.galleryData && Array.isArray(window.galleryData)) {
   window.galleryData.forEach((subfolderData) => {
-    // Randomize images within this subfolder
-    const randomizedImages = shuffleArray(subfolderData.images);
+    // Separate 00_.png files from other images
+    const zeroZeroImages = subfolderData.images.filter(img => {
+      const filename = img.path.split('/').pop();
+      return filename.startsWith('00_');
+    });
+    const otherImages = subfolderData.images.filter(img => {
+      const filename = img.path.split('/').pop();
+      return !filename.startsWith('00_');
+    });
+    
+    // Randomize other images (not 00_.png)
+    const randomizedOtherImages = shuffleArray(otherImages);
+    
+    // Combine: 00_.png files first, then randomized other images
+    const orderedImages = zeroZeroImages.concat(randomizedOtherImages);
+    
     // Add all images from this subfolder to the flattened array
-    flattenedGalleryData = flattenedGalleryData.concat(randomizedImages);
+    flattenedGalleryData = flattenedGalleryData.concat(orderedImages);
   });
   
   console.log('Gallery data processed:');
@@ -224,6 +238,11 @@ function updateAllImageSizes() {
     // Get the stored base width from data attribute
     const storedBaseWidth = parseFloat(figure.getAttribute('data-base-width'));
     
+    // Skip 00_.png files (they have base-width of 400 and should stay fixed at 400x400px)
+    if (storedBaseWidth === 400) {
+      return;
+    }
+    
     // Apply scale factor to the stored base width
     const scaledWidth = storedBaseWidth * scale;
     figure.style.maxWidth = `${scaledWidth}%`;
@@ -278,23 +297,42 @@ window.addEventListener('resize', function() {
 
 // Function to create and display an image
 function createImage(imageData, isFirstImage) {
-  // Random width between 20% and 40% (20% smaller than original 25-50%)
-  const baseWidth = Math.floor(Math.random() * 20 + 10);
-  
-  // Apply scale factor
-  const scale = calculateScaleFactor();
-  const width = baseWidth * scale;
+  // Check if this is a 00_.png file (should be fixed 600x600px)
+  const filename = imageData.path.split('/').pop();
+  const isZeroZeroImage = filename.startsWith('00_');
   
   const main = document.querySelector('main');
   const figure = document.createElement('figure');
-  figure.setAttribute('data-base-width', baseWidth); // Store original base width
-  figure.style.maxWidth = `${width}%`;
+  
+  if (isZeroZeroImage) {
+    // 00_.png files use fixed 400x400px size
+    figure.style.width = '400px';
+    figure.style.height = '400px';
+    figure.setAttribute('data-base-width', 400); // Store for reference
+  } else {
+    // Random width between 20% and 40% (20% smaller than original 25-50%)
+    const baseWidth = Math.floor(Math.random() * 20 + 10);
+    
+    // Apply scale factor
+    const scale = calculateScaleFactor();
+    const width = baseWidth * scale;
+    
+    figure.setAttribute('data-base-width', baseWidth); // Store original base width
+    figure.style.maxWidth = `${width}%`;
+  }
   
   const img = document.createElement('img');
   // Use encodeURI() to properly encode Unicode characters in the path
   // This handles special characters like 'ü' in folder names correctly
   img.src = encodeURI(imageData.path);
   img.alt = imageData.title;
+  
+  // Set 400x400px for 00_.png files
+  if (isZeroZeroImage) {
+    img.style.width = '400px';
+    img.style.height = '400px';
+    img.style.objectFit = 'cover'; // Ensure image fills the 400x400 area
+  }
   
   // Add error handling for failed image loads with detailed logging
   img.onerror = function() {

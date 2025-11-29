@@ -50,11 +50,16 @@ function scanWebImages() {
       const imageFiles = fs.readdirSync(subfolderPath)
         .filter(file => {
           const ext = path.extname(file).toLowerCase();
-          // Exclude 00_.png placeholder files
-          if (file === '00_.png' || file === '00_.jpg' || file === '00_.jpeg') {
-            return false;
-          }
           return IMAGE_EXTENSIONS.includes(ext);
+        })
+        .sort((a, b) => {
+          // Sort so that 00_ files always come first
+          const aIs00 = a.startsWith('00_');
+          const bIs00 = b.startsWith('00_');
+          if (aIs00 && !bIs00) return -1;
+          if (!aIs00 && bIs00) return 1;
+          // If both or neither are 00_, sort alphabetically
+          return a.localeCompare(b);
         });
       
       // Store images with their paths and titles
