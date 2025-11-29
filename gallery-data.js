@@ -93,34 +93,34 @@ window.galleryData = [
     ]
   },
   {
-    subfolder: "5_asuzüge",
+    subfolder: "5_asuzuge",
     images: [
       {
-        path: "web_images/5_asuzüge/01_cover.jpg",
+        path: "web_images/5_asuzuge/01_cover.jpg",
         title: "cover"
       },
       {
-        path: "web_images/5_asuzüge/02_table_of_contents.jpg",
+        path: "web_images/5_asuzuge/02_table_of_contents.jpg",
         title: "table_of_contents"
       },
       {
-        path: "web_images/5_asuzüge/03_flyleaf.jpg",
+        path: "web_images/5_asuzuge/03_flyleaf.jpg",
         title: "flyleaf"
       },
       {
-        path: "web_images/5_asuzüge/04_pages_18-19.jpg",
+        path: "web_images/5_asuzuge/04_pages_18-19.jpg",
         title: "pages_18-19"
       },
       {
-        path: "web_images/5_asuzüge/05_pages_20-21.jpg",
+        path: "web_images/5_asuzuge/05_pages_20-21.jpg",
         title: "pages_20-21"
       },
       {
-        path: "web_images/5_asuzüge/06_pages_38-39.jpg",
+        path: "web_images/5_asuzuge/06_pages_38-39.jpg",
         title: "pages_38-39"
       },
       {
-        path: "web_images/5_asuzüge/07_pages_38-39.jpg",
+        path: "web_images/5_asuzuge/07_pages_38-39.jpg",
         title: "pages_38-39"
       }
     ]

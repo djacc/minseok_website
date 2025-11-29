@@ -40,18 +40,16 @@ header {
 .name {
   position: relative;
   float: left;
-  clear: both;
-  margin-bottom: 8px;
+  margin-right: 20px;
 }
 
 .email-link,
 .instagram-link {
   position: relative;
   float: left;
-  clear: both;
   color: inherit;
   text-decoration: none;
-  margin-bottom: 8px;
+  margin-right: 20px;
 }
 
 .email-link:hover,

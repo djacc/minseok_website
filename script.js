@@ -291,22 +291,26 @@ function createImage(imageData, isFirstImage) {
   figure.style.maxWidth = `${width}%`;
   
   const img = document.createElement('img');
-  // URL-encode the path to handle special characters (colons in filenames, etc.)
-  // We need to encode the path but preserve the directory structure
-  // Split path and encode each component separately to preserve slashes
-  const pathParts = imageData.path.split('/');
-  const encodedPath = pathParts.map(part => {
-    // Encode each path component to handle special chars like colons in filenames
-    return encodeURIComponent(part).replace(/%2F/g, '/');
-  }).join('/');
-  img.src = encodedPath;
+  // Use encodeURI() to properly encode Unicode characters in the path
+  // This handles special characters like 'ü' in folder names correctly
+  img.src = encodeURI(imageData.path);
   img.alt = imageData.title;
   
-  // Add error handling for failed image loads
+  // Add error handling for failed image loads with detailed logging
   img.onerror = function() {
-    console.error(`Failed to load image: ${imageData.path}`);
-    console.error(`Image title: ${imageData.title}`);
+    console.error(`❌ Failed to load image:`);
+    console.error(`   Original path: ${imageData.path}`);
+    console.error(`   Encoded path: ${encodeURI(imageData.path)}`);
+    console.error(`   Title: ${imageData.title}`);
+    console.error(`   Current page URL: ${window.location.href}`);
   };
+  
+  // Log successful loads for debugging (only first few to avoid spam)
+  if (currentIndex < 3) {
+    img.onload = function() {
+      console.log(`✅ Loaded: ${imageData.title} from ${encodeURI(imageData.path)}`);
+    };
+  }
   
   // Add slide animation to the first image
   if (isFirstImage) {
