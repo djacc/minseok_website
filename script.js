@@ -294,6 +294,12 @@ function createImage(imageData, isFirstImage) {
   img.src = imageData.path;
   img.alt = imageData.title;
   
+  // Add error handling for failed image loads
+  img.onerror = function() {
+    console.error(`Failed to load image: ${imageData.path}`);
+    console.error(`Image title: ${imageData.title}`);
+  };
+  
   // Add slide animation to the first image
   if (isFirstImage) {
     img.classList.add('slide-right');

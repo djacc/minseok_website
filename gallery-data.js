@@ -75,19 +75,19 @@ window.galleryData = [
     subfolder: "4_loehr_salonediasschau",
     images: [
       {
-        path: "web_images/4_loehr_salonediasschau/01_jazz_seat_detail.jpeg",
+        path: "web_imaegs_hidden/4_loehr_salonediasschau/01_jazz_seat_detail.jpeg",
         title: "jazz_seat_detail"
       },
       {
-        path: "web_images/4_loehr_salonediasschau/02_jazz.jpeg",
+        path: "web_imaegs_hidden/4_loehr_salonediasschau/02_jazz.jpeg",
         title: "jazz"
       },
       {
-        path: "web_images/4_loehr_salonediasschau/03_jazz_salone_di_aschau.jpeg",
+        path: "web_imaegs_hidden/4_loehr_salonediasschau/03_jazz_salone_di_aschau.jpeg",
         title: "jazz_salone_di_aschau"
       },
       {
-        path: "web_images/4_loehr_salonediasschau/04_jazz_salone_di_aschau.jpeg",
+        path: "web_imaegs_hidden/4_loehr_salonediasschau/04_jazz_salone_di_aschau.jpeg",
         title: "jazz_salone_di_aschau"
       }
     ]
