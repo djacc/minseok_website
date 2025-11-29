@@ -50,6 +50,10 @@ function scanWebImages() {
       const imageFiles = fs.readdirSync(subfolderPath)
         .filter(file => {
           const ext = path.extname(file).toLowerCase();
+          // Exclude 00_.png placeholder files
+          if (file === '00_.png' || file === '00_.jpg' || file === '00_.jpeg') {
+            return false;
+          }
           return IMAGE_EXTENSIONS.includes(ext);
         });
       
