@@ -58,8 +58,8 @@ window.galleryData = [
     subfolder: "3_werkschau_plakat",
     images: [
       {
-        path: "web_images/3_werkschau_plakat/01_suedkreuz.jpg",
-        title: "suedkreuz"
+        path: "web_images/3_werkschau_plakat/01_südkreuz.jpg",
+        title: "südkreuz"
       },
       {
         path: "web_images/3_werkschau_plakat/02_first_draft.jpg",
