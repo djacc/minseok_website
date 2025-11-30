@@ -132,8 +132,8 @@ window.galleryData = [
         title: "first_draft"
       },
       {
-        path: "web_images/werkschau_plakat/02_first_draft.png",
-        title: "first_draft"
+        path: "web_images/werkschau_plakat/02_final_poster.png",
+        title: "final_poster"
       },
       {
         path: "web_images/werkschau_plakat/03_suedkreuz.jpg",
