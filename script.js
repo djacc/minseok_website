@@ -320,6 +320,9 @@ function createImage(imageData, isFirstImage) {
   const filename = imageData.path.split('/').pop();
   const isZeroZeroImage = filename.startsWith('00_');
   
+  // Check if this is an SVG file
+  const isSvg = filename.toLowerCase().endsWith('.svg');
+  
   const main = document.querySelector('main');
   const figure = document.createElement('figure');
   
@@ -352,7 +355,8 @@ function createImage(imageData, isFirstImage) {
   if (isZeroZeroImage) {
     img.style.width = '400px';
     img.style.height = '400px';
-    img.style.objectFit = 'cover'; // Ensure image fills the 400x400 area
+    // Use 'contain' for SVG files to preserve aspect ratio, 'cover' for raster images
+    img.style.objectFit = isSvg ? 'contain' : 'cover';
   }
   
   // Add error handling for failed image loads with detailed logging
