@@ -47,20 +47,15 @@ function scanWebImages() {
       const subfolderPath = path.join(WEB_IMAGES_DIR, subfolder);
       
       // Read images in subfolder
-      const imageFiles = fs.readdirSync(subfolderPath)
-        .filter(file => {
-          const ext = path.extname(file).toLowerCase();
+      // Use readdirSync with withFileTypes to get exact filenames with case preserved
+      const allFiles = fs.readdirSync(subfolderPath, { withFileTypes: true });
+      const imageFiles = allFiles
+        .filter(dirent => {
+          if (!dirent.isFile()) return false;
+          const ext = path.extname(dirent.name).toLowerCase();
           return IMAGE_EXTENSIONS.includes(ext);
         })
-        .sort((a, b) => {
-          // Sort so that 00_ files always come first
-          const aIs00 = a.startsWith('00_');
-          const bIs00 = b.startsWith('00_');
-          if (aIs00 && !bIs00) return -1;
-          if (!aIs00 && bIs00) return 1;
-          // If both or neither are 00_, sort alphabetically
-          return a.localeCompare(b);
-        });
+        .map(dirent => dirent.name); // Get exact filename with preserved case
       
       // Store images with their paths and titles
       const images = imageFiles.map(file => {

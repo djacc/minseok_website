@@ -12,27 +12,27 @@ window.galleryData = [
         title: "cover"
       },
       {
-        path: "web_images/auszuege/02_table_of_contents.PNG",
+        path: "web_images/auszuege/02_table_of_contents.png",
         title: "table_of_contents"
       },
       {
-        path: "web_images/auszuege/03_flyleaf.PNG",
+        path: "web_images/auszuege/03_flyleaf.png",
         title: "flyleaf"
       },
       {
-        path: "web_images/auszuege/04_pages_18_19.PNG",
+        path: "web_images/auszuege/04_pages_18_19.png",
         title: "pages_18_19"
       },
       {
-        path: "web_images/auszuege/05_pages_20_21.PNG",
+        path: "web_images/auszuege/05_pages_20_21.png",
         title: "pages_20_21"
       },
       {
-        path: "web_images/auszuege/06_pages_38_39.PNG",
+        path: "web_images/auszuege/06_pages_38_39.png",
         title: "pages_38_39"
       },
       {
-        path: "web_images/auszuege/07_pages_38_39.PNG",
+        path: "web_images/auszuege/07_pages_38_39.png",
         title: "pages_38_39"
       }
     ]
