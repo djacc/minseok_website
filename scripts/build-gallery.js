@@ -6,7 +6,7 @@ const WEB_IMAGES_DIR = 'web_images';
 const GALLERY_DATA_FILE = 'gallery-data.js';
 
 // Supported image formats
-const IMAGE_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
+const IMAGE_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg'];
 
 // Function to extract title from filename (removes NN_ prefix)
 function extractTitle(filename) {

@@ -4,7 +4,7 @@ window.galleryData = [
     subfolder: "auszuege",
     images: [
       {
-        path: "web_images/auszuege/00_auszuege_aus.png",
+        path: "web_images/auszuege/00_auszuege_aus.svg",
         title: "auszuege_aus"
       },
       {
@@ -41,7 +41,7 @@ window.galleryData = [
     subfolder: "loehr_salonediasschau",
     images: [
       {
-        path: "web_images/loehr_salonediasschau/00_himmel_ueber_aschau.png",
+        path: "web_images/loehr_salonediasschau/00_himmel_ueber_aschau.svg",
         title: "himmel_ueber_aschau"
       },
       {
@@ -66,7 +66,7 @@ window.galleryData = [
     subfolder: "saveroom",
     images: [
       {
-        path: "web_images/saveroom/00_save_room_theme.png",
+        path: "web_images/saveroom/00_save_room_theme.svg",
         title: "save_room_theme"
       },
       {
@@ -87,7 +87,7 @@ window.galleryData = [
     subfolder: "superellipse",
     images: [
       {
-        path: "web_images/superellipse/00_superellipse.png",
+        path: "web_images/superellipse/00_superellipse.svg",
         title: "superellipse"
       },
       {
@@ -95,7 +95,7 @@ window.galleryData = [
         title: "process"
       },
       {
-        path: "web_images/superellipse/04_eurostile_comparison.jpg",
+        path: "web_images/superellipse/04_eurostile_comparison.png",
         title: "eurostile_comparison"
       },
       {
@@ -103,7 +103,7 @@ window.galleryData = [
         title: "omega_speedmaster_tv"
       },
       {
-        path: "web_images/superellipse/06_minuscule_o.jpg",
+        path: "web_images/superellipse/06_minuscule_o.png",
         title: "minuscule_o"
       },
       {
@@ -124,7 +124,7 @@ window.galleryData = [
     subfolder: "werkschau_plakat",
     images: [
       {
-        path: "web_images/werkschau_plakat/00_werkschau_plakat.png",
+        path: "web_images/werkschau_plakat/00_werkschau_plakat.svg",
         title: "werkschau_plakat"
       },
       {
