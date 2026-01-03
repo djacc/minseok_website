@@ -44,6 +44,18 @@ header {
   margin-right: 20px;
 }
 
+.name-link {
+  position: relative;
+  float: left;
+  color: inherit;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.name-link:hover {
+  text-decoration: underline;
+}
+
 .email-link,
 .instagram-link {
   position: relative;

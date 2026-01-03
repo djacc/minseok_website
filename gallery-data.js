@@ -49,16 +49,16 @@ window.galleryData = [
         title: "jazz_seat_detail"
       },
       {
-        path: "web_images/loehr_salonediasschau/02_jazz.jpeg",
-        title: "jazz"
+        path: "web_images/loehr_salonediasschau/02_l5_jazz.jpeg",
+        title: "l5_jazz"
       },
       {
         path: "web_images/loehr_salonediasschau/03_jazz_salone_di_aschau.jpeg",
         title: "jazz_salone_di_aschau"
       },
       {
-        path: "web_images/loehr_salonediasschau/04_jazz_salone_di_aschau.jpeg",
-        title: "jazz_salone_di_aschau"
+        path: "web_images/loehr_salonediasschau/04_jazz_salone_di_aschau_II.jpeg",
+        title: "jazz_salone_di_aschau_II"
       }
     ]
   },
@@ -78,8 +78,8 @@ window.galleryData = [
         title: "record_shop"
       },
       {
-        path: "web_images/saveroom/03_record_shop.jpg",
-        title: "record_shop"
+        path: "web_images/saveroom/03_record_shop_II.jpg",
+        title: "record_shop_II"
       }
     ]
   },
@@ -107,7 +107,7 @@ window.galleryData = [
         title: "minuscule_o"
       },
       {
-        path: "web_images/superellipse/07_basic_latin.png",
+        path: "web_images/superellipse/07_basic_latin.jpg",
         title: "basic_latin"
       },
       {
