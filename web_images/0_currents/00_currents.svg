@@ -5,9 +5,9 @@
 <style type="text/css">
 	.st0{display:none;}
 	.st1{display:inline;}
-	.st2{display:inline;clip-path:url(#SVGID_00000116197897797884798660000015028691040951940487_);}
+	.st2{display:inline;clip-path:url(#SVGID_00000067928910436160730450000005023837791655248822_);}
 	.st3{fill:#FFFFFF;}
-	.st4{clip-path:url(#SVGID_00000069375310493801664730000006383611705118725765_);}
+	.st4{clip-path:url(#SVGID_00000093861664801225983650000009165019502007626149_);}
 	.st5{fill:#010101;}
 	.st6{fill:#6E6F71;}
 	.st7{fill:none;}
@@ -22,19 +22,19 @@
 		<defs>
 			<rect id="SVGID_1_" y="0" width="400" height="400"/>
 		</defs>
-		<clipPath id="SVGID_00000180354172243238217070000017703997652346470299_" class="st1">
+		<clipPath id="SVGID_00000124883819663826460640000002747965859471012491_" class="st1">
 			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
 		</clipPath>
-		<g style="display:inline;clip-path:url(#SVGID_00000180354172243238217070000017703997652346470299_);">
+		<g style="display:inline;clip-path:url(#SVGID_00000124883819663826460640000002747965859471012491_);">
 			<rect y="0" class="st3" width="400" height="400"/>
 			<g>
 				<defs>
-					<rect id="SVGID_00000126297923624202508670000017947766261105634205_" y="0" width="400" height="400"/>
+					<rect id="SVGID_00000018197864524009213520000013727508452300674477_" y="0" width="400" height="400"/>
 				</defs>
-				<clipPath id="SVGID_00000027571539241112427910000009132815604474611384_">
-					<use xlink:href="#SVGID_00000126297923624202508670000017947766261105634205_"  style="overflow:visible;"/>
+				<clipPath id="SVGID_00000126322585492914052890000003251618465402430090_">
+					<use xlink:href="#SVGID_00000018197864524009213520000013727508452300674477_"  style="overflow:visible;"/>
 				</clipPath>
-				<g style="clip-path:url(#SVGID_00000027571539241112427910000009132815604474611384_);">
+				<g style="clip-path:url(#SVGID_00000126322585492914052890000003251618465402430090_);">
 					<g>
 						<path class="st5" d="M16.9,43.7V22.9c0-3.6-0.5-4-4.1-4.3v-0.9h12.8v0.9c-3.5,0.3-4,0.8-4.1,4.3v9.3h14v-9.3
 							c0-3.6-0.5-4-4.1-4.3v-0.9h12.8v0.9c-3.5,0.3-4,0.8-4.1,4.3v21.3c0,3.5,0.6,4,4.1,4.3v0.9H31.5v-0.9c3.6-0.2,4-0.8,4.1-4.8
@@ -1329,6 +1329,7 @@
 	</g>
 </g>
 <g id="Layer_2">
+	<rect class="st3" width="399.6" height="399.6"/>
 	<rect x="11.1" y="15.6" class="st7" width="375.4" height="50.8"/>
 	<text transform="matrix(1 0 0 1 11.0802 49.7522)"><tspan x="0" y="0" class="st8 st9">Cu</tspan><tspan x="56.8" y="0" class="st8 st9">r</tspan><tspan x="73.8" y="0" class="st8 st9">re</tspan><tspan x="111.1" y="0" class="st8 st9 st10">n</tspan><tspan x="134.3" y="0" class="st8 st9">ts</tspan></text>
 	<rect x="11.9" y="73.5" class="st7" width="385.2" height="326.6"/>
