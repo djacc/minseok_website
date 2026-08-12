@@ -1,6 +1,51 @@
 // Auto-generated gallery data
 window.galleryData = [
   {
+    subfolder: "0_currents",
+    images: [
+      {
+        path: "web_images/0_currents/00_currents.svg",
+        title: "currents"
+      },
+      {
+        path: "web_images/0_currents/01_A7_00535.jpg",
+        title: "A7_00535"
+      },
+      {
+        path: "web_images/0_currents/02_A7_00467.jpg",
+        title: "A7_00467"
+      },
+      {
+        path: "web_images/0_currents/03_A7_00516.jpg",
+        title: "A7_00516"
+      },
+      {
+        path: "web_images/0_currents/04_A7_00476.jpg",
+        title: "A7_00476"
+      },
+      {
+        path: "web_images/0_currents/05_A7_00442.jpg",
+        title: "A7_00442"
+      },
+      {
+        path: "web_images/0_currents/06_A7_00423.jpg",
+        title: "A7_00423"
+      },
+      {
+        path: "web_images/0_currents/07_A7_00187.jpg",
+        title: "A7_00187"
+      },
+      {
+        path: "web_images/0_currents/08_A7_00486.jpg",
+        title: "A7_00486"
+      },
+      {
+        path: "web_images/0_currents/09_A7_00488.jpg",
+        title: "A7_00488"
+      }
+    ]
+  },
+  {
     subfolder: "auszuege",
     images: [
       {
