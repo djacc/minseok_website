@@ -38,8 +38,12 @@ function scanWebImages() {
     // Sort subfolders by number prefix
     const sortedSubfolders = subfolders.sort((a, b) => {
       // Extract number from folder name (e.g., "1_asuzüge" -> 1)
-      const numA = parseInt(a.match(/^(\d+)_/)?.[1]) || 999;
-      const numB = parseInt(b.match(/^(\d+)_/)?.[1]) || 999;
+      // Use explicit null checks (not `|| 999`) so a "0_" prefix isn't
+      // mistaken for "no prefix" due to 0 being falsy in JS.
+      const matchA = a.match(/^(\d+)_/);
+      const matchB = b.match(/^(\d+)_/);
+      const numA = matchA ? parseInt(matchA[1]) : 999;
+      const numB = matchB ? parseInt(matchB[1]) : 999;
       return numA - numB;
     });
     

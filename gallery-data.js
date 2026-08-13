@@ -46,6 +46,35 @@ window.galleryData = [
     ]
   },
   {
+    subfolder: "1_freitag_impact_statement",
+    images: [
+      {
+        path: "web_images/1_freitag_impact_statement/00_freitag_impact_statements.svg",
+        title: "freitag_impact_statements"
+      },
+      {
+        path: "web_images/1_freitag_impact_statement/01_landing_page.jpg",
+        title: "landing_page"
+      },
+      {
+        path: "web_images/1_freitag_impact_statement/02_statement_and_carousel.jpg",
+        title: "statement_and_carousel"
+      },
+      {
+        path: "web_images/1_freitag_impact_statement/03_statement_mobile.jpg",
+        title: "statement_mobile"
+      },
+      {
+        path: "web_images/1_freitag_impact_statement/04_data_visualization.jpg",
+        title: "data_visualization"
+      },
+      {
+        path: "web_images/1_freitag_impact_statement/05_long_scroll.jpg",
+        title: "long_scroll"
+      }
+    ]
+  },
+  {
     subfolder: "auszuege",
     images: [
       {
