@@ -7,13 +7,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'DotoRoundedBlack';
-  src: url('Doto_Rounded-Black.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 * {
   margin: 0;
 }
@@ -94,8 +87,6 @@ figcaption {
   position: relative;
   float: left;
   clear: both;
-  font-family: 'DotoRoundedBlack', arial, sans-serif;
-  text-transform: uppercase;
 }
 
 /* Ensure 00_.png figure captions are visible above other images */
