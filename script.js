@@ -414,6 +414,11 @@ if (flattenedGalleryData.length > 0) {
 }
 
 document.addEventListener('click', function(event) {
+  const clickHint = document.getElementById('click-hint');
+  if (clickHint) {
+    clickHint.remove();
+  }
+
   if (currentIndex < flattenedGalleryData.length) {
     const imageData = flattenedGalleryData[currentIndex];
     console.log(imageData);

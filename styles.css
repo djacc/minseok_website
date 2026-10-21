@@ -89,6 +89,15 @@ figcaption {
   clear: both;
 }
 
+#click-hint {
+  position: fixed;
+  left: 50%;
+  bottom: 12px;
+  transform: translateX(-50%);
+  z-index: 900;
+  pointer-events: none;
+}
+
 /* Ensure 00_.png figure captions are visible above other images */
 figure[data-zero-zero="true"] {
   margin-bottom: 30px !important; /* Reserve space below for caption */
