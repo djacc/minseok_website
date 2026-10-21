@@ -92,10 +92,11 @@ figcaption {
 #click-hint {
   position: fixed;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 12px;
+  transform: translateX(-50%);
   z-index: 900;
   pointer-events: none;
+  font: 12px 'msCustom', arial, sans-serif;
 }
 
 /* Ensure 00_.png figure captions are visible above other images */
