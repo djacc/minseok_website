@@ -97,6 +97,7 @@ figcaption {
   z-index: 900;
   pointer-events: none;
   font: 12px 'msCustom', arial, sans-serif;
+  text-align: center;
 }
 
 /* Ensure 00_.png figure captions are visible above other images */
